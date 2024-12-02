@@ -214,17 +214,19 @@ keybinds clear-defaults=true {
 }
 themes {
     tokyonight_storm {
-        fg 192 202 245
-        bg 41 46 66
-        red 247 118 142
-        green 158 206 106
-        yellow 224 175 104
-        blue 122 162 247
-        magenta 187 154 247
-        orange 255 158 100
-        cyan 125 207 255
-        black 36 40 59
-        white 169 177 214
+        fg "#c0caf5"
+        bg "#292e42"
+        // Black should match the terminal background color
+        // This ensures the top and bottom bars are transparent
+        black "#24283b"
+        red "#f7768e"
+        green "#9ece6a"
+        yellow "#e0af68"
+        blue "#7aa2f7"
+        magenta "#bb9af7"
+        cyan "#7dcfff"
+        white "#a9b1d6"
+        orange "#ff9e64"
     }
 }
 
@@ -281,7 +283,7 @@ default_mode "locked"
 // The name of the default layout to load on startup
 // Default: "default"
 //
-default_layout "compact"
+default_layout "default"
 
 // The folder in which Zellij will look for layouts
 // (Requires restart)
